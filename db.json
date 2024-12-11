@@ -1,0 +1,19 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "title": "Sundar pichai interview 4",
+            "body": "Discussing the future of tech"
+        },
+        {
+            "id": "2",
+            "title": "Tesla ",
+            "body": "Tesla latest EV"
+        },
+        {
+            "id": "3",
+            "title": "AI ",
+            "body": "AI in 2024"
+        }
+    ]
+}
