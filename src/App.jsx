@@ -3,6 +3,8 @@ import Home from './components/Home'
 import PostsTraditional from './components/PostsTraditional'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import PostsRQ from './components/PostsRQ'
+import PostDetailsRq from './components/PostDetailsRq'
+import PaginatedQueries from './components/PaginatedQueries'
 function App() {
   return (
     <div>
@@ -25,6 +27,8 @@ function App() {
             <Route exact path='/' element={<Home />} />
             <Route exact path='/posts' element={<PostsTraditional />} />
             <Route exact path='/rq-posts' element={<PostsRQ />} />
+            <Route exact path='/rq-posts/:id' element={<PostDetailsRq />} />
+            <Route exact path='/paginated-routes' element={<PaginatedQueries />} />
           </Routes>
 
         </div>
