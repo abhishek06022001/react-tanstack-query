@@ -5,6 +5,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import PostsRQ from './components/PostsRQ'
 import PostDetailsRq from './components/PostDetailsRq'
 import PaginatedQueries from './components/PaginatedQueries'
+import InfiniteQueries from './components/InfiniteQueries'
 function App() {
   return (
     <div>
@@ -29,6 +30,7 @@ function App() {
             <Route exact path='/rq-posts' element={<PostsRQ />} />
             <Route exact path='/rq-posts/:id' element={<PostDetailsRq />} />
             <Route exact path='/paginated-routes' element={<PaginatedQueries />} />
+            <Route exact path='/infinite-fruits' element={<InfiniteQueries />} />
           </Routes>
 
         </div>

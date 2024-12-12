@@ -10,8 +10,8 @@ function PostDetailsRq() {
     const { id } = useParams();
     const { data, isError, isLoading, error, isFetching, refetch } = useQuery({
         queryKey: ['posts', id],
-        queryFn: () =>  fetchPostDetails(id)
-        });
+        queryFn: () => fetchPostDetails(id)
+    });
     if (isLoading) {
         return <h1>Loading ....</h1>
     }
